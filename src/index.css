@@ -112,6 +112,7 @@ background:
 .list-heading{
   padding: 10px 20px;
   margin-bottom: 20px;
+  margin-top: 10px;
 }.movielist::-webkit-scrollbar {
   display: none; /* Chrome, Edge, Safari */
 }

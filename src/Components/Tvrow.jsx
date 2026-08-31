@@ -11,7 +11,6 @@ const Tvrow = (props) => {
         );
 
         const data = await response.json();
-        console.log(data.results);
 
         setMovies(data.results);
       } catch (error) {

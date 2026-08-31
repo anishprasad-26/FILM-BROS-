@@ -11,6 +11,7 @@ function App() {
       <Movierow title="Trending Now" category="popular"/>
       <Movierow title="Top-Rated" category="top_rated"/>
       <Tvrow title="Popular in TV " category="popular"/>
+      <Tvrow title="Top Rated in TV " category="top_rated"/>
       
     </>
   );
