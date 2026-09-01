@@ -1,14 +1,17 @@
 .card-container{
     display: inline-block;
-    /* padding: 10px; */
     height: 300px;
     width: 200px;
     overflow: hidden;
     border-radius: 10px;
-    /* background-color: gray; */
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 .card-container img{
     height: 100%;
     width: 100%;
     object-fit: contain;
+}
+.card-container:hover{
+    transform: translate(0px,-10px)
 }
