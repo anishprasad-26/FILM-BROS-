@@ -34,6 +34,7 @@ const MovieDetails = () => {
       <div className="hero-bg">
         <img
           src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
+          alt={movie.title}
         />
         <div className="hero-overlay2"></div>
         <div className="details-hero-content">
@@ -47,6 +48,12 @@ const MovieDetails = () => {
             <span>
               ⏱️ {Math.floor(movie.runtime / 60)}h {movie.runtime % 60}m
             </span>
+          </div>
+
+          <div className="movie-genres">
+            {movie.genres.map((genre) => (
+              <span key={genre.id}>{genre.name}</span>
+            ))}
           </div>
 
           <p>{movie.overview}</p>

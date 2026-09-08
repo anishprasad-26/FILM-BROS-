@@ -23,10 +23,16 @@ const Movierow = (props) => {
     <div>
       <h2 className="list-heading">{props.title}</h2>
       <ul className="movielist">
-        {movies.map((movie,idx)=>{
-          return <li key={idx}><Moviecard src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}/></li>
+        {movies.map((movie, idx) => {
+          return (
+            <li key={movie.id}>
+              <Moviecard
+                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                id={movie.id}
+              />
+            </li>
+          );
         })}
-        
       </ul>
     </div>
   );
