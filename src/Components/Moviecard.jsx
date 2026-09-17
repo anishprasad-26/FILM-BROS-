@@ -7,7 +7,7 @@ const Moviecard = (props) => {
   return (
     <div
       className="card-container"
-      onClick={() => navigate(`/movie/${props.id}`)}
+      onClick={() => navigate(`/${props.type}/${props.id}`)}
     >
       <img src={props.src} />
     </div>

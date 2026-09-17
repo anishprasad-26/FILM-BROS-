@@ -29,6 +29,7 @@ const Movierow = (props) => {
               <Moviecard
                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                 id={movie.id}
+                type="movie"
               />
             </li>
           );
